@@ -971,7 +971,7 @@
 
                         // Update the remainder.
                         if ( rem[0] ) {
-                            rem[remL++] = xc[xi] || 0;
+                            rem.push(xc[xi] || 0); remL = remL + 1;
                         } else {
                             rem = [ xc[xi] ];
                             remL = 1;
